@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "gocanto example",
+  "description": "gocanto",
+  "version": "0.1",
+  "browser_action": {
+    "default_icon": "public/images/icon.png",
+    "default_popup": "index.html",
+    "default_title": "Click here!"
+  },
+  "permissions": [
+    "activeTab",
+    "http://ajax.googleapis.com/"
+  ]
+}
