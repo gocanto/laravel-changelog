@@ -1,15 +1,22 @@
 {
   "manifest_version": 2,
-  "name": "gocanto example",
-  "description": "gocanto",
+  "name": "laravel-changelog",
+  "description": "A small extension to show the laravel changelogs on google chrome.",
   "version": "0.1",
+  "author": "Gustavo Ocanto <gustavoocanto@gmail.com>",
+  "homepage_url": "https://github.com/gocanto/laravel-changelog",
   "browser_action": {
     "default_icon": "public/images/icon.png",
     "default_popup": "index.html",
-    "default_title": "Click here!"
+    "default_title": "Laravel CHANGELOG"
   },
   "permissions": [
-    "activeTab",
-    "http://ajax.googleapis.com/"
-  ]
+    "activeTab"
+  ],
+  "icons": {
+    "16": "public/images/icon16.png",
+    "48": "public/images/icon48.png",
+    "128": "public/images/icon128.png"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }

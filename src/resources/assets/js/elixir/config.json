@@ -1,0 +1,5 @@
+{
+	"npm": "./node_modules",
+	"fonts": "./src/public/fonts",
+	"theme": "./src/resources/assets/css"
+}

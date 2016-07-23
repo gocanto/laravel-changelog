@@ -1,13 +1,57 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
-<head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Laravel Change Logs">
+    <meta name="author" content="Gustavo Ocanto">
+    <title>Laravel Change Logs</title>
+    <link href="public/css/app.css" rel="stylesheet">
+  </head>
 
-</head>
+  <body>
 
-<body>
-Index
+    <div class="container wrapper">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation"><a href="https://github.com/laravel/framework"><i class="fa fa-github" aria-hidden="true"></i>&nbsp;GitHub</a></li>
+            <li role="presentation"><a href="https://github.com/laravel/framework/issues"><i class="fa fa-bug" aria-hidden="true"></i>&nbsp;Issues</a></li>
+            <li role="presentation"><a href="http://g-ocanto.com"><i class="fa fa-code-fork" aria-hidden="true"></i>&nbsp;Repo</a></li>
+          </ul>
+        </nav>
+        <h3 class="color-red">
+        	<img src="public/images/logo.png" height="30" alt="">
+        	Laravel Change Logs
+        </h3>
+      </div>
 
-</body>
+      <div class="row">
+          <div class="col-md-12">&nbsp;</div>
+      </div>
+
+      <change-logs inline-template v-cloak>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h4><i class="fa fa-list-alt" aria-hidden="true"></i>&nbsp;CHANGELOG <small>5.2</small> </h4>
+              </div>
+              <div class="panel-body">
+                {{{ raw }}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </change-logs>
+
+      <footer class="footer">
+        <p>Laravel PHP Framework Official <a href="https://github.com/laravel/framework/blob/5.2/CHANGELOG.md">Logs</a> file</p>
+      </footer>
+
+    </div>
+
+    <script src="public/js/app.js"></script>
+  </body>
 </html>
