@@ -1,8 +1,9 @@
 {
   "manifest_version": 2,
-  "name": "laravel-changelog",
+  "name": "Laravel Changelogs",
   "description": "A small extension to show the laravel changelogs on google chrome.",
-  "version": "0.1",
+  "version": "0.2",
+  "version_name": "0.2 alpha",
   "author": "Gustavo Ocanto <gustavoocanto@gmail.com>",
   "homepage_url": "https://github.com/gocanto/laravel-changelog",
   "browser_action": {
@@ -10,9 +11,7 @@
     "default_popup": "index.html",
     "default_title": "Laravel CHANGELOG"
   },
-  "permissions": [
-    "activeTab"
-  ],
+  "permissions": ["activeTab", "<all_urls>"],
   "icons": {
     "16": "public/images/icon16.png",
     "48": "public/images/icon48.png",
