@@ -2,6 +2,11 @@
 
 A small extension to show the laravel PHP framework within your google chrome.
 
+
+# Screencast
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/x5_fUW0T2RM/0.jpg)](https://www.youtube.com/watch?v=x5_fUW0T2RM)
+
 # Installation
 
 To start using the extension you just need to download it from the google chrome extensions market. Here is the <a href="">link to it</a>
