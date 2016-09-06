@@ -1,4 +1,5 @@
 <script>
+
 import showdown from 'showdown';
 
 export default
@@ -6,7 +7,12 @@ export default
 	data: function ()
 	{
 		return {
-			raw: {}
+			raw: {},
+			version: '',
+			branch: {
+				'5.2': 'https://raw.githubusercontent.com/laravel/framework/5.3/CHANGELOG-5.2.md',
+				'5.3': 'https://raw.githubusercontent.com/laravel/framework/5.3/CHANGELOG-5.3.md'
+			}
 		};
 	},
 
@@ -15,8 +21,20 @@ export default
 		this.fetchChangeLogFile();
 	},
 
+	watch: {
+		version: function ()
+		{
+			this.fetchChangeLogFile();
+		}
+	},
+
 	methods:
 	{
+		/**
+		 * Fetch the github raw file.
+		 *
+		 * @return void
+		 */
 		fetchChangeLogFile: function ()
 		{
 			let vm = this;
@@ -24,15 +42,26 @@ export default
 			this.$http.get(this.getBranch()).then((response) => {
 				vm.raw = this.toMarkdown(response.data);
 			}, (response) => {
-				return 'This branch does not exist!';
+				return 'The branch ' + this.version + ' does not exist!';
 			});
 		},
 
+		/**
+		 * Return the branch under observation.
+		 *
+		 * @return string
+		 */
 		getBranch: function ()
 		{
-			return 'https://raw.githubusercontent.com/laravel/framework/5.2/CHANGELOG.md';
+			return this.branch[this.version];
 		},
 
+		/**
+		 * Pipe the github raw file to markdown.
+		 *
+		 * @param  object response
+		 * @return object
+		 */
 		toMarkdown: function (response)
 		{
 			let converter = new showdown.Converter();

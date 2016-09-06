@@ -31,12 +31,27 @@
           <div class="col-md-12">&nbsp;</div>
       </div>
 
-      <change-logs inline-template v-cloak>
+      <change-logs inline-template>
+
+        <div class="row">
+          <div class="col-md-3">
+            <div class="form-group">
+              <label for="version">Version:</label>
+              <select v-model="version" name="version" class="form-control input-sm">
+                <option value="5.2">5.2</option>
+                <option value="5.3" selected>5.3</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">&nbsp;</div>
+
         <div class="row">
           <div class="col-md-12">
             <div class="panel panel-info">
               <div class="panel-heading">
-                <h4><i class="fa fa-list-alt" aria-hidden="true"></i>&nbsp;CHANGELOG <small>5.2</small> </h4>
+                <h4><i class="fa fa-list-alt" aria-hidden="true"></i>&nbsp;CHANGELOG <small>{{ version }}</small> </h4>
               </div>
               <div class="panel-body">
                 {{{ raw }}}
