@@ -9,7 +9,7 @@ A small extension to show the laravel PHP framework within your google chrome.
 
 # Installation
 
-To start using the extension you just need to download it from the google chrome extensions market. Here is the <a href="">link to it</a>
+To start using the extension you just need to download it from the google chrome extensions market. Here is the <a href="https://chrome.google.com/webstore/detail/laravel-changelogs/nndjbillfjbfaffpghfjgffikpjjoccg">link to it</a>
 
 
 # Contributing
