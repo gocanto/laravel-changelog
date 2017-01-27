@@ -11,7 +11,8 @@ export default
 			version: '',
 			branch: {
 				'5.2': 'https://raw.githubusercontent.com/laravel/framework/5.3/CHANGELOG-5.2.md',
-				'5.3': 'https://raw.githubusercontent.com/laravel/framework/5.3/CHANGELOG-5.3.md'
+				'5.3': 'https://raw.githubusercontent.com/laravel/framework/5.3/CHANGELOG-5.3.md',
+				'5.4': 'https://raw.githubusercontent.com/laravel/framework/5.4/CHANGELOG-5.4.md'
 			}
 		};
 	},
