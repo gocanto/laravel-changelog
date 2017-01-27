@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Laravel Changelogs",
   "description": "A small extension to show the laravel changelogs on google chrome.",
   "version": "0.3",
