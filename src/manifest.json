@@ -1,8 +1,8 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 2,
   "name": "Laravel Changelogs",
   "description": "A small extension to show the laravel changelogs on google chrome.",
-  "version": "0.3",
+  "version": "0.4",
   "version_name": "0.3 alpha",
   "author": "Gustavo Ocanto <gustavoocanto@gmail.com>",
   "homepage_url": "https://github.com/gocanto/laravel-changelog",
